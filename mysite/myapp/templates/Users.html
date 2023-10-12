@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/style.css' %}" />
+  </head>
+  <body>
+    <h1>All People</h1>
+    <ul>
+      {% for User in Users %}
+      <li>{{ User.username }}</li>
+      {% endfor %}
+    </ul>
+    <a href="{% url 'add_User' %}">Add User</a>
+  </body>
+</html>

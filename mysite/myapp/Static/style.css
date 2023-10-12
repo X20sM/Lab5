@@ -1,0 +1,22 @@
+html {
+  font-size: 50%;
+  background-color: rgb(143, 148, 188);
+}
+form {
+  max-width: 40rem;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+label {
+  font-size: 4rem;
+}
+input {
+  padding: 12px 20px;
+  border-radius: 20px;
+  border-color: rgb(163, 147, 188);
+}
